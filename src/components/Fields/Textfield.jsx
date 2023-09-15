@@ -24,7 +24,7 @@ const Textfield = (props) => {
     <div className={`input-container ${className}`}>
       <input
         className="default-field"
-        type={type == "text" ? type : showPassword ? "password": "text"}
+        type = {type !== 'password' ? type : (showPassword ? 'password' : 'text')}
         placeholder={placeholder}
         id={id}
         name={name}
