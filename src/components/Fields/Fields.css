@@ -1,0 +1,31 @@
+.default-field{
+    padding: 15px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(var(--secondary),1);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.default-field::placeholder{
+  color: white;
+}
+
+
+  .input-container {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white; /* Change the color as needed */
+    font-size: 1.2em; /* Adjust the font size as needed */
+  }
+  
