@@ -1,24 +1,38 @@
 import './components/button/Button.css'
-import './App.css';
 import Button from './components/button/Button';
-import '../src/components/colors.css'
+import './App.css';
+import '../src/components/constants.css'
+import Textfield from './components/Fields/Textfield';
+import './components/Fields/Fields.css'
+import './components/formStyle.css'
+import overlap from './components/overlap.png'
 
 function App() {
   return (
-    <div className="App">
-      <Button text="Login" className="form-btn" />
-      <Button text="Create" className="create-btn" />
-      <Button text="Details" className="table-btn" />
-      <Button text="Export" className="export-btn" />
-      <Button text="Clear" className="clear-btn" />
-      <Button text="Search" className="search-btn" />
-      <Button text="Cancel" className="popup-cancel-btn" />
-      <Button text="Save" className="popup-save-btn" />
-      <Button text="Delete" className="popup-delete-btn" />
-      
-      
-  
-  </div>
+    <>
+    <div className="parent"> 
+      <div className="centered-container">
+        <div className="form-container">
+          <h1>Login</h1>
+          <form>
+            <Textfield placeholder="Enter your Email" type="text" />
+            <Textfield
+              type="password"
+              placeholder="Password"
+              id="password"
+              name="password"
+              required
+              // onChange={handlePasswordChange}
+            />
+            <Button text="Login" className="form-btn" />
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <img src={overlap} alt="Stacked Image" class="stacked-image" />
+    </>
+    
   );
 }
 
