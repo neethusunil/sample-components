@@ -1,0 +1,16 @@
+/* styles.css or styles.scss */
+.forgot-password {
+    text-align: right; /* Align the link to the right */
+    margin-top: 10px; /* Add some top margin for spacing */
+  }
+  
+  .forgot-password a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #007bff; /* Set the link color to a blue shade */
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    color: blue;
+  }
+  
