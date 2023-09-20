@@ -10,14 +10,14 @@
   align-items: center;
   background-color: rgba(var(--secondary), 1);
   color: white;
-  padding: 20px 0;
+  padding: var(--paddingLeft) 0;
   /* Add other styles as needed */
 }
   
 .navbar-left {
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: var(--paddingLeft);
   }
 
   .hamburger {
@@ -31,7 +31,7 @@
   .navbar-right {
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    padding-right: var(--paddingLeft);
   }
   
   .account-icon {
@@ -40,7 +40,7 @@
     font-size: 24px;
     cursor: pointer;
     color: white;
-    margin-left: 20px;
+    margin-left: var(--paddingLeft);
   }
   
   /* Media query for mobile responsiveness */
