@@ -4,10 +4,3 @@
     padding-top: 10px;
     
 }
-
-.company-title{
-  font-size: 24px; /* Adjust the font size to your preference */
-  font-weight: bold; /* Make the text bold for emphasis */
-  text-transform: uppercase; /* Convert text to uppercase for a consistent look */
-  letter-spacing: 1px; /* Add letter spacing for readability */
-}
