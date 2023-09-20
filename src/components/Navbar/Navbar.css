@@ -1,19 +1,25 @@
 /* Navbar.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(var(--secondary), 1);
-    color: white;
-    padding: 20px 20px;
-  }
+  position: fixed; /* Set the position to fixed to make it stick to the top */
+  top: 0; /* Stick it to the top of the screen */
+  left: 0; /* Optionally, you can set the horizontal position as needed */
+  width: 100%; /* Make it span the entire width of the screen */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(var(--secondary), 1);
+  color: white;
+  padding: 20px 0;
+  /* Add other styles as needed */
+}
   
-  .navbar-left {
+.navbar-left {
     display: flex;
     align-items: center;
+    padding-left: 20px;
   }
-  
+
   .hamburger {
     background: none;
     border: none;
@@ -25,6 +31,7 @@
   .navbar-right {
     display: flex;
     align-items: center;
+    padding-right: 20px;
   }
   
   .account-icon {
