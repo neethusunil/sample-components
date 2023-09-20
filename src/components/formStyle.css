@@ -24,7 +24,7 @@
   }
 
   .stacked-image {
-    position: absolute;
+    position: fixed;
     bottom: 0; /* Adjust the top value to position the image vertically */
     left: 0;
    /* Adjust the left value to position the image horizontally */
