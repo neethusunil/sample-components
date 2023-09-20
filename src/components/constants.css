@@ -19,4 +19,5 @@
     padding-top: var(--spaceFromNavbar);
     padding-left: var(--paddingLeft);
     padding-right: var(--paddingLeft);
+    padding-bottom: 70px;
   }
