@@ -5,7 +5,7 @@ table{
 }
 
 .table-container {
-    width: 60%; /* Adjust the width as needed */
+    width: 70%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the table container horizontally */
     background: white;
     border-radius: 1rem;
@@ -14,6 +14,13 @@ table{
     justify-content: center;
     align-items: center;
     padding-top: var(--containerPadding);
+    box-shadow: 2px 2px 15px  grey;
+  }
+
+  @media (max-width: 850px) {
+   .table-container{
+    width: 80%;
+   }
   }
 
 
