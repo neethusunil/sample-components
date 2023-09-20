@@ -6,13 +6,16 @@
     --export: 50, 65, 202;
     --clear: 210, 241, 16;
     --delete: 224, 77, 77;
-    /* Add more colors as needed */
+    --paddingLeft: 20px;
+    --spaceFromNavbar: 60px;
   }
   
   body, * {
-    font-family: 'Roboto',sans-serif
+    font-family: 'Roboto',sans-serif;
   }
-  
-  h1{
-    text-align: center;
+
+  body{
+    padding-top: var(--spaceFromNavbar);
+    padding-left: var(--paddingLeft);
+    padding-right: var(--paddingLeft);
   }
