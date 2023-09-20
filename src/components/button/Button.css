@@ -32,6 +32,13 @@
   background-color: rgba(var(--primary), 0.7);
 }
 
+@media (max-width: 768px) {
+  .create-btn {
+    padding: 10px 20px; /* Adjust padding for mobile screens */
+    font-size: 14px; /* Adjust font size for mobile screens */
+  }
+}
+
 /* inside tables */
 .table-btn {
   padding: 6px 10px;
