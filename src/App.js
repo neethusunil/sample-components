@@ -13,6 +13,7 @@ import Table from './components/table/Table';
 import '../src/components/tablePageStyle.css'
 import CompanyName from './components/Headings/CompanyName';
 import TableHeading from './components/Headings/TableHeading';
+import DataDisplay from './components/DataDisplay/DataDisplay';
 
 function App() {
   const theadData = ["Name", "Poles", "Podiums", "Wins", "Career Points", "Championships"];
@@ -77,6 +78,12 @@ function App() {
     // Add more data objects as needed
   ];
 
+  const data = [
+    { column1: 'Item 1', column2: 'Description 1' },
+    { column1: 'Item 2', column2: 'Description 2' },
+    // Add more data items as needed
+  ];
+
   return (
     <>
     <Navbar/>
@@ -84,6 +91,9 @@ function App() {
       <CompanyName text="Farmer"/>
       <Button className= 'create-btn' text="Create New Company"/>
     </div>
+    <DataDisplay data={data} />
+    
+    
     <TableHeading text="User List"/>
     <Table theadData={theadData} bodyData={bodyData} />
     {/* <div className="parent"> 
