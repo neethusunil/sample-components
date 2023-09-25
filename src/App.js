@@ -14,6 +14,9 @@ import '../src/components/tablePageStyle.css'
 import CompanyName from './components/Headings/CompanyName';
 import TableHeading from './components/Headings/TableHeading';
 import DataDisplay from './components/DataDisplay/DataDisplay';
+import Toggle from './components/Toggle/Toggle';
+import Status from './components/Status/Status';
+import { useState } from 'react';
 
 function App() {
   const theadData = ["Name", "Poles", "Podiums", "Wins", "Career Points", "Championships"];
@@ -84,6 +87,8 @@ function App() {
     // Add more data items as needed
   ];
 
+  const [isActive, setisActive] =useState(true)
+
   return (
     <>
     <Navbar/>
@@ -93,7 +98,8 @@ function App() {
     </div>
     <DataDisplay data={data} />
     
-    
+    <Toggle/>
+    <Status active={isActive}/>
     <TableHeading text="User List"/>
     <Table theadData={theadData} bodyData={bodyData} />
     {/* <div className="parent"> 

@@ -1,0 +1,19 @@
+/* Display.css */
+.status-container {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    user-select: none;
+  }
+  
+  /* Define styles for the active state */
+  .status-container.active {
+    background-color:rgba(var(--primary)) ;
+  }
+  
+  /* Define styles for the inactive state */
+  .status-container.inactive {
+    background-color: rgba(var(--delete));
+    color: #fff;
+  }
+  
