@@ -4,14 +4,27 @@ import './DataDisplay.css'; // You can create a separate CSS file for styling if
 const DataDisplay = ({ data }) => {
   return (
     <div className="flexbox-container">
-      {data.map((item, index) => (
-        <div key={index} className="flexbox-row">
-          <div className="column attribute">{item.column1}</div>
-          <div className='column colon'>: </div>
-          <div className="column">{item.column2}</div>
+        <div className='attribute' >
+          {data.map((item, index) => (
+          <div key={index}>{item.name}</div>
+          ))}
+          
         </div>
-      ))}
+
+      <div className='colon'>
+        {data.map((item, index) => (
+          <div key={index}>:</div>
+        ))}
+      </div>
+
+      <div className='item'>
+        {data.map((item, index) => (
+          <div key={index}>{item.type}</div>
+        ))}
+      </div>
     </div>
+
+    
   );
 };
 
