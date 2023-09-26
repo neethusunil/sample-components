@@ -1,0 +1,32 @@
+/* DataDisplay.css */
+
+/* ... your previous styles ... */
+
+/* Style for the edit button */
+.edit-button {
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .edit-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px; /* Adjust the padding as needed */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the edit content (text and icon) */
+  .edit-content {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust the gap to control spacing between text and icon */
+  }
+  
+  .edit-text{
+    font-size: 16px;
+  }
