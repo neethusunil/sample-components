@@ -14,9 +14,12 @@ import '../src/components/tablePageStyle.css'
 import CompanyName from './components/Headings/CompanyName';
 import TableHeading from './components/Headings/TableHeading';
 import DataDisplay from './components/DataDisplay/DataDisplay';
-import Toggle from './components/Toggle/Toggle';
 import Status from './components/Status/Status';
 import { useState } from 'react';
+import "./components/Edit Button/Edit.css"
+import { MdEdit } from 'react-icons/md';
+import ToggleSwitch from './components/Toggle/ToggleSwitch';
+import Message from './components/Message/Message';
 
 function App() {
   const theadData = ["Name", "Poles", "Podiums", "Wins", "Career Points", "Championships"];
@@ -82,12 +85,17 @@ function App() {
   ];
 
   const data = [
-    { column1: 'Item 1', column2: 'Description 1' },
-    { column1: 'Item 2', column2: 'Description 2' },
-    // Add more data items as needed
+    { name: 'Ayimen',  type: 'Good boy' },
+    { name: 'Another Name',  type: 'Another Type' },
+    // Add more data objects as needed
   ];
 
-  const [isActive, setisActive] =useState(true)
+  const [isActive, setIsActive] =useState(true)
+  const handleToggle = (newState) => {
+    setIsActive(newState);
+    // You can perform any additional actions here when the toggle state changes.
+  };
+
 
   return (
     <>
@@ -96,12 +104,24 @@ function App() {
       <CompanyName text="Farmer"/>
       <Button className= 'create-btn' text="Create New Company"/>
     </div>
+    <div className='edit-button'>
+        <button>
+          <div className="edit-content">
+            <div className='edit-text'>Edit</div>
+            <div>
+              <MdEdit size={18} />
+            </div>
+          </div>
+        </button>
+      </div>
+      <ToggleSwitch active={isActive} onToggle={handleToggle} />
+      <Message message="Neethu is here"/>
     <DataDisplay data={data} />
-    
-    <Toggle/>
     <Status active={isActive}/>
     <TableHeading text="User List"/>
     <Table theadData={theadData} bodyData={bodyData} />
+
+    
     {/* <div className="parent"> 
       <div className="centered-container">
         <div className="form-container">
