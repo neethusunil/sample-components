@@ -1,0 +1,32 @@
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  width: 60px;
+  background-color: #b1c5ba;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.toggle-button.active {
+  background-color: #4DE096;
+}
+
+.toggle-handle {
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle-button.active .toggle-handle {
+  transform: translateX(30px);
+}
