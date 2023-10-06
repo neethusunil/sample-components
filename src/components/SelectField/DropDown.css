@@ -1,0 +1,13 @@
+/* Dropdown.css */
+.dropdown-select {
+  font-size: 16px;
+  background-color: rgba(var(--secondary));
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%; /* Adjust the width to 100% or a specific width that suits your design */
+  padding: 15px 10px;
+  border-radius: 10px;
+  /* Add more styles as needed */
+}
