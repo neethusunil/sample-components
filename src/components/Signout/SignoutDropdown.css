@@ -1,0 +1,28 @@
+/* SignoutDropdown.css */
+
+.signout-dropdown {
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+  
+  .signout-option {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+
+  }
+
+  .signout-option:hover{
+    background-color: rgba(var(--primary));
+    border-radius: 4px;
+  }
+  
